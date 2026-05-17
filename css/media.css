@@ -1,0 +1,62 @@
+/* sm */
+@media screen and (min-width: 640px) {
+  #navbar .logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  #navbar h1 {
+    font-size: 24px;
+  }
+  #navbar #addBtn {
+    padding: 10px 20px;
+  }
+
+  /* home */
+  #home .cards-style .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  #home .left-section h2 {
+    font-size: 30px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+  #home .cards-style p {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  #home .cards-style span {
+    font-size: 24px;
+  }
+}
+
+/* large */
+@media screen and (min-width: 992px) {
+}
+
+/* Xl */
+@media screen and (min-width: 1280px) {
+  #rowFavorite .content h3,
+  #rowEmergency .content h3 {
+    font-size: 14px;
+  }
+
+  #rowFavorite .content p,
+  #rowEmergency .content p {
+    font-size: 12px;
+  }
+
+  #rowFavorite a,
+  #rowEmergency a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* XXL */
+@media screen and (min-width: 1636px) {
+}
