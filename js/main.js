@@ -62,6 +62,29 @@ function creatContact() {
       favorite: contactFavoriteInput.checked,
       emergency: contactEmergencyInput.checked,
     };
+        var isPhoneExist = false;
+
+    for (var i = 0; i < contactList.length; i++) {
+
+      if (
+        contactList[i].phoneNumber == contact.phoneNumber &&
+        i != updateIndex
+      ) {
+        isPhoneExist = true;
+        break;
+      }
+    }
+
+    if (isPhoneExist) {
+      Swal.fire({
+        title: "Duplicate Phone Number",
+        text: `A contact with this phone number already exists: ${contactList[i].name}`,
+        icon: "error",
+        confirmButtonColor: "#7f22fe",
+      });
+      return;
+    }
+
     if (updateIndex == -1) {
       contactList.push(contact);
 
