@@ -327,7 +327,7 @@ function search() {
 
   if (searchResult.length == 0) {
     rowContact.innerHTML = `<div>
-            <p class='text-center no-found fw-bold fs-3'>NO ITEM FOUND</p>
+            <p class='text-center no-found fw-bold fs-3'>NO CONTACT FOUND</p>
         </div>`;
     return;
   }
